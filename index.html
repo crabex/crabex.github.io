@@ -5,25 +5,260 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="Content-Security-Policy"
 		content="default-src 'unsafe-eval' 'unsafe-inline' 'self' data: *; connect-src 'self' *; style-src 'self' 'unsafe-inline' *; media-src *" />
-	<title>VR 3D Interview</title>
+	<title>CrabEx Decentralized Exchange</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<style>
 		html,
 		body {
-			/* width: 100%;
-			height: 100%; */
+			width: 1280px;
+			/* height: 100%; */
 			padding: 0;
-			margin: 0;
+			margin: auto;
+			scroll-behavior: smooth;
 			/* overflow: hidden; */
 		}
 	</style>
 </head>
 
 <body>
-	<div id="index_root_div" style="border: solid red 0px;">
+
+	<div
+		style="position: fixed; top:0px;width:90%; z-index: 10; border: 1px solid rgb(0, 17, 255);color: red; background-color: rgb(11, 7, 92); opacity: 100%;">
+		<ul style="list-style-type: none; width: 90%; color: white; font-weight: bold;">
+			<li style="float: left;">
+				<a href="#" style="color: white;">Home</a>
+			</li>
+
+			<li style="float: right;">
+				<a href="#" style="color: white;">中文</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">English</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">Margin Trading</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">Collaterized Loan</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">Mutual Fund</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">CrabEx Dapp</a>
+			</li>
+		</ul>
+	</div>
+
+	<div
+		style="position: fixed; top:150px;right: 50px; border: 1px solid red; padding-right: 10px;background-color: cornsilk; opacity: 100%;">
+		<ul style="list-style-type: none; ">
+			<li>
+				<a href="#warning">Warning</a>
+			</li>
+			<li>
+				<a href="#dapp">CrabEx Dapp</a>
+			</li>
+			<li>
+				<a href="#movement">Crab Movement</a>
+			</li>
+			<li>
+				<a href="#trading">What's trading?</a>
+			</li>
+			<li>
+				<a href="#assets">Assets Diagram</a>
+			</li>
+			<li>
+				<a href="#trading2">What's trading again?</a>
+			</li>
+			<li>
+				<a href="#demo">Crab Demo Introduction</a>
+			</li>
+			<li>
+				<a href="#restart">Restart 10 crabs</a>
+			</li>
+			<li>
+				<a href="#airdrop">Crab Coin Airdrop</a>
+			</li>
+			<li>
+				<a href="#mutual">Crab Mutual Fund</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="index_root_div" style="border: solid red 0px;margin-top: 50px; margin-right: 25%;">
+		<h1 id="warning">Warning</h1>
+		<p>
+			Use of this blockchain software may be against law in the country you reside. Please consult a lawyer before
+			any
+			use of our software especially if you are living in USA, China, or India.
+		</p>
+
+		<h1 id="dapp">CrabEx Dapp</h1>
+		<ul>
+			<li>It is a decentralized exchange.</li>
+			<li>It is a free exchange, while most other exchanges charge you 0.1-0.5% service fee.</li>
+			<li>It provides an automatic free token profit machine which every one can use to earn profits bu just
+				deposit 2
+				types of coins in the machine. We call it crab machine. We
+				will explain it shortly.</li>
+			<li>It provide mutual fund management to everyone. Every one can issue mutual funds in minutes.</li>
+			<li>It provide a collaterized loan service to every one. So the loan is immune to credit default.</li>
+			<li>It provide a margin trading service to everyone.</li>
+		</ul>
+
+		<h1 id="movement">Crab Movement</h1>
+		<p>
+			We all know crabs move horizontally. The question is: can crabs move vertically forward or backward? Some
+			friends will tell me the crab can zigzag move forward. That's a very important point and we will show you
+			how to
+			make profits by learning from the crabs.
+		</p>
+
+
+		<h1 id="trading">What's trading?</h1>
+		<p>
+			You trade apple with orange. What's happening? You get more oranges, but your apples decrease. The
+			fundamental
+			character about trading is: When one asset increases, The other asset must decrease. Now let's make some
+			definition:
+		</p>
+		<ul>
+			<li>When the quantity of one asset increase while the other decrease, we call it left or right horizontal
+				movement.</li>
+			<li>When both quantities of the assets increase, we call it vertical forward movement.</li>
+			<li>When both quantities of the assets decrease, we call it vertical backward movement.</li>
+		</ul>
+
+		<h1 id="assets">Assets Diagram</h1>
+		<p>
+			Now we draw a diagram for the quantities of apples and oranges you own. Let's take X-axis for orange, and
+			take
+			Y-axis for apple. Your assets will be represented as a point in the 2-D diagram.
+		</p>
+		<div style="position:relative; left:50px; width:150px; height:150px;background-color:bisque;">
+			<div style="position:absolute; top: 10px; left: 10px">
+				Y
+			</div>
+			<div style="position:absolute; top: 10px; right: 10px">
+				W
+			</div>
+			<div style="position:absolute; bottom: 10px; left: 10px">
+				O
+			</div>
+			<div style="position:absolute; bottom: 10px; right: 10px">
+				X
+			</div>
+		</div>
+
+		<ul>
+			<li>At point O, you have zero apple and zero orange.</li>
+			<li>At point X, you have all oranges.</li>
+			<li>At point Y, you have all apples.</li>
+			<li>At point W, you have both oranges and apples.</li>
+		</ul>
+
+		<h1 id="trading2">What's trading again?</h1>
+		<p>
+			When you trade, your assets move from one point to another point in the diagram. Two points construct a
+			directional line. The direction is roughly X->Y or Y->X direction. We call it horizontal direction.
+		</p>
+		<p>
+			What we are interested is the other direction O->W direction. We call it verticall forward movement.
+			If your assets move from O to W point, Your assets will increase for sure.
+		</p>
+		<p>
+			Our trading always do horizontal movement. Can you build a machine to move in O->W direction?
+		</p>
+
+		<h1 id="demo">Crab Demo Introduction</h1>
+		<p>
+			In the experiment, we will do trading with USD and EUR. For simplicity:
+
+		</p>
+		<ul>
+			<li>We take USD as base coin, and take EUR as common coin. EUR price is evaluated against USD.</li>
+			<li>Initially, the price is 1. So you can exchange 1 USD with 1 EUR.</li>
+			<li>Every day, the price will either advance by 10% or drop by 10%. The price move randomly.</li>
+			<li>Our crab will own 1 million USD and 1 million EUR initially.</li>
+			<li>Our crab will do trade once everyday, the trading is based on the historical price.</li>
+			<li>To make the experiment more effiently, we will start 10 crabs for 10 different markets.</li>
+			<li>We will run the experiment for 1 year, or 365 days.</li>
+			<li>We will compute profit for each crab after 1 year ending.</li>
+			<li>The profit will be calculated by taking the gemetric average of both USD and EUR quantity ratio's</li>
+			<li style="color:chocolate">p=sqrt(Yn/Y0*Xn/X0)-1</li>
+		</ul>
+
+
+		<p>
+			What we observed in the crab experiment?
+		</p>
+		<ul>
+			<li>In most cases, the price is fluctuating within <span style="font-weight: bold;">[0.2, 5]</span> range.
+				Please verify on the right side diagram, the
+				crab is moving forward in O->W direction.</li>
+			<li>For occasional case, the market is strong trending, bullish, or bearish, and price go above 5 or below
+				0.2,
+				the crab is not doing well.</li>
+			<li>For strong trending, you should really hold one coin instead of trading with 2 coins, you then maximize
+				your
+				profits.</li>
+			<li>The crab machine works best for fluctuating market. For most of our stock market, and currency market,
+				it
+				works greatly.</li>
+		</ul>
+
+		<h1 id="restart">Restart 10 crabs</h1>
+
+		<p>
+			Just click the link now for a quick demo.<br /> [<a id="start_10_crabs"
+				style="border:0px solid blue;text-decoration: underline;color: blue; cursor: pointer;">Restart 10
+				crabs now!</a>]. <br /> <span style="font-weight: bold;">Please watch the price fluctuating range and
+				the
+				crab movement.</span>
+		</p>
+		<div id="demo-diagram">
+		</div>
+
+		<h1 id="airdrop">Crab Coin Airdrop</h1>
+		<p>
+			In the demo, all crab move parameters are fixed. If you want to do more tunning, you need to do it on the
+			ethereum blockchain.
+			We will offer crab coin airdrop to everybody. Please watch out for the airdrop activity. We will start it in
+			a few months.
+			We will publish the airdrop address, then you just send a 0 coin to the address and the airdrop coin will be
+			returned to your wallet.
+			You need to create a <a href="https://cn.bing.com/search?q=install+metamask+wallet">MetaMask wallet</a>
+			before you
+			participate the activity.
+		</p>
+
+		<h1 id="mutual">Crab Mutual Fund</h1>
+		<p>
+			As you know, every one can issue mutual funds with our CrabEx Dapp. We will also issue mutual fund to
+			everybody who are interested.
+			This fund will be used to set up dozens of Crab Machines in the Crab Decentralized Exchange.
+		</p>
+
 
 	</div>
+
 	<p></p>
 <script type="text/javascript" src="index.bundle.js"></script></body>
 
