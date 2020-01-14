@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'unsafe-eval' 'unsafe-inline' 'self' data: *; connect-src 'self' *; style-src 'self' 'unsafe-inline' *; media-src *" />
+	<title>CrabEx Decentralized Exchange</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<style>
+		html,
+		body {
+			width: 1280px;
+			/* height: 100%; */
+			padding: 0;
+			margin: auto;
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div
+		style="position: fixed; top:0px;width:90%; z-index: 10; border: 1px solid rgb(0, 17, 255);color: red; background-color: rgb(11, 7, 92); opacity: 100%;">
+		<ul style="list-style-type: none; width: 90%; color: white; font-weight: bold;">
+			<li style="float: left;">
+				<a href="./" style="color: white;">Home</a>
+			</li>
+
+			<li style="float: right;">
+				<a href="./cn/" style="color: white;">中文</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">English</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">Margin Trading</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="./collateral.html" style="color: white;">Collaterized Contracts</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="#" style="color: white;">Mutual Fund</a>
+			</li style="float: right;">
+			<li style="float: right;">
+				&nbsp; | &nbsp;
+			</li>
+			<li style="float: right;">
+				<a href="./crab.html" style="color: white;">CrabEx Dapp</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div
+		style="position: fixed; top:150px;right: 50px; border: 1px solid red; padding-right: 10px;background-color: cornsilk; opacity: 100%;">
+		<ul style="list-style-type: none; ">
+			<li>
+				<a href="#warning">Warning</a>
+			</li>
+			<li>
+				<a href="#dapp">CrabEx Dapp</a>
+			</li>
+			<li>
+				<a href="#bootstrap">Bootstrap blockchain collaterals</a>
+			</li>
+			<li>
+				<a href="#contracts">CrabEx contracts</a>
+			</li>
+			<li>
+				<a href="#schedule">CrabEx Schedule</a>
+			</li>
+			<li>
+				<a href="#bounty">CrabEx Bounty Program</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+	<div id="collateral_root_div" style="border: solid red 0px;margin-top: 50px; margin-right: 25%;">
+		<h1 id="warning">Warning</h1>
+		<p>
+			Use of this blockchain software may be against law in the country you reside. Please consult a lawyer before
+			any
+			use of our software especially if you are living in USA, China, or India.
+		</p>
+
+		<h1 id="dapp">CrabEx Dapp</h1>
+
+		<p>
+
+			CrabEx is a collateral oriented, safe, solid and free financial system running on libra blockchain.
+			Why do we make it collateral oriented?
+
+		</p>
+
+		<p>
+
+			Let's consider a very simple scenario. Alice wants to exchange an apple coin with Bob for an orange coin.
+			Alice deliver the apple to Bob right now. However Bob will only deliever the orange to Alice one month
+			later.
+			Bob promises to Alice that he will do it. Can Alice trust it? If Alice trusts it and sign the contract, it
+			may
+			result in a lot of conflict in the future since Bob may default. If a financial system is built on promise,
+			the
+			system will doom to fail sooner or later. We need a concrete and safe system. What's the robust system built
+			oriented?
+			We will make a very important statement here:
+
+
+		</p>
+
+		<p>
+			Promise is cheap and Collateral is valuable!
+		</p>
+
+		<p>
+			Let's rework our example above. This time we will use our collateral oriented principle.
+		</p>
+
+		<ol>
+			<li>Alice promises to deliver one apple coin to Bob 6 months later. She locks 1000 USDT as collateral on the
+				blockchain. </li>
+			<li>Bob promises to deliver one orange coin to Alice 6 months later. He locks 1000 LIBRA as collateral on
+				the
+				blockchain.</li>
+			<li>On the contract mature date, If Alice defaults, she will lose 1000 USDT. If Bob defaults, he will lose
+				1000
+				libra.</li>
+		</ol>
+
+
+		<p>
+			Is this contract more solid than the contract without collateral?
+		</p>
+
+		<p>
+			We build all our financial contract collateral oriented. Every contract will lock some kind of collaterals.
+			Every contract is financial asset itself. So every contract can be locked as collateral for another
+			financial
+			contract.
+			It is a chain of collaterals. So our financial system is safer and more solid than most of the financial
+			system
+			in the world.
+		</p>
+
+
+		<h1 id="bootstrap">Bootstrap blockchain collaterals</h1>
+
+		<p>
+			Now we know we have a concrete blockchain financial system which is built on collaterals. We still need to
+			worry
+			about
+			what the initial seed collaterals are. Actually it comes from real assets or credits off-chain. We must have
+			all
+			kinds of
+			authority who acts as the immediate agent. The authority issue you the on-chain tokens when you deposit the
+			off-chain assets
+			as off-chain collaterals to the authority. Just a few examples here:
+		</p>
+
+		<ul>
+			<li>You deposit a basket of fiat currency as collateral to libra organization leading by facebook, then you
+				get
+				libra back. </li>
+			<li>You have credit with a credit card company like VESA or MASTERCARD. Then you get credit token on the
+				blockchain</li>
+			<li>You deposit your house certificate as collateral and sign a contract with a bank. You now get house
+				token
+				assets on the blockchain.</li>
+		</ul>
+
+		<p>
+			If we think off-chain assets as slow assets running locally in a slow way, then all collateral oriented
+			blockchain assets are running on a solid safe efficient highway. The authority acts highway entry and exit
+			agents.
+		</p>
+
+		<h1 id="contracts">CrabEx contracts</h1>
+
+		<p>
+
+			Now you should have some basic idea on the collateral oriented financial system. Then what kind of services
+			do we provide? We provide dozens of financial contracts on the blockchain. Compared to classical
+			corresponding
+			financial
+			contracts off-chain. Our contracts are collateral oriented. Every contract will lock some collaterals and
+			contract itself
+			will act as collateral for other financial contracts. We build a chain of collaterals. We will only
+			enumerate
+			the common contracts
+			we support:
+
+		</p>
+
+		<ol>
+			<li>Future contract backed by collaterals. </li>
+			<li>Call option contract backed by collaterals. </li>
+			<li>Put option contract backed by collaterals. </li>
+			<li>Bond contract backed by collaterals. </li>
+			<li>Two level mutual fund contract. </li>
+			<li>Margin trading backed by collaterals and protected by stop order. </li>
+			<li>Simple Loan contract backed by collaterals. </li>
+			<li>Loan contract backed by collaterals with installments. </li>
+			<li>Loan contract backed by collaterals and protected by stop order. </li>
+			<li>Fungible and non-fungible Assets swap contract backed by collaterals. </li>
+			<li>Loan contract backed by account receivable collaterals in supply chain upstream. </li>
+			<li>Loan contract backed by future goods right collaterals and refundable contract in supply chain
+				downstream.
+			</li>
+			<li>Simple crowdsale contract.</li>
+			<li>Donation contract.</li>
+			<li>Coupon contract.</li>
+			<li>Airdrop contract.</li>
+			<li>Collateralized Off-chain Delivery contract for e-commerce.</li>
+			<li>Crab Automatic Token Profit Machine contract.</li>
+			<li>And more comming ...</li>
+		</ol>
+
+		<h1 id="schedule">CrabEx Schedule</h1>
+
+		<p>
+
+			We originally developed the contracts on ehtereum blockchain. After facebook's libra blockchain
+			announcement,
+			we decided to translate all our contracts to libra blockchain. We expect our products will be online as soon
+			as
+			libra blockchain is online.
+
+		</p>
+
+		<h1 id="bounty">CrabEx Bounty Program</h1>
+
+		<p>
+
+			We will also provide a bounty program. This bounty program is only valid provided we can successfully issue
+			our
+			coins for this projects. If you believe collateral is important for a solid finacial system on a blockchain,
+			then you understand we can succeed!
+
+
+		</p>
+
+		<p>
+
+			For any distinct github and libra first 100 users, if you ask any meaningful question or offer any
+			suggestions
+			on our github
+			page,
+			you are entitled for 100 USDT market equivalant coins. If you are the first 1000 users, and you report any
+			contract bug for the above contracts, you will also be entitled for 100 USDT coins.
+			Please send all your requests to our forum: <br />
+			<a
+				href="https://github.com/crabex/crabex.github.io/issues">https://github.com/crabex/crabex.github.io/issues</a>
+
+		</p>
+
+		<hr />
+
+		<p>
+			© 2020 crabex.github.io. All rights reserved.
+		</p>
+
+
+	</div>
+
+<script type="text/javascript" src="../index.bundle.js"></script></body>
+
+</html>
